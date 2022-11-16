@@ -20,6 +20,16 @@
       margin: 0 auto;
     }
 
+    h1 {
+      font-size: 80px;
+      color: #9c27b0;
+    }
+
+    h2 {
+      font-size: 45px;
+      color: #ffc107;
+    }
+
     .topHeader {
       display: flex;
       justify-content: space-between;
@@ -121,7 +131,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" href="#">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Nosotros</a>
@@ -159,34 +169,35 @@
     </button>
   </div>
   <main class="myContainer">
+    <h1 id="titulo" class="text-center py-5">Curso de Cypress</h1>
     <div class=" container-list">
       <div class="row">
         <div class="col-6">
-          <h2 class="display-5">Cursos Disponibles</h2>
-          <ul class="course-list list-group list-group-flush">
-            <li class="list-group-item list2 web">Selenium</li>
-            <li class="list-group-item list1 web">Cypress</li>
+          <h2 class="">Cursos Disponibles</h2>
+          <ul class="course-list list-group list-group-flush course-list">
+            <li class="list-group-item list1 web">Selenium</li>
+            <li class="list-group-item list2 web">Cypress</li>
             <li class="list-group-item list3 mobile">Appium</li>
             <li class="list-group-item list4 web mobile">Wdio</li>
             <li class="list-group-item list5 web">Javascript</li>
             <li class="list-group-item list6 web">HTML</li>
             <li class="list-group-item list7 web">CSS</li>
-            <li class="list-group-item list8 web">React</li>
+            <li class="list-group-item list8 desktop">Java</li>
           </ul>
         </div>
         <div class="col-6">
-          <h2 class="display-5">Lista de países</h2>
-          <ul class="list-group list-group-flush course-list">
-            <li class="list-group-item list1 country RD">RD</li>
-            <li class="list-group-item list2 country PR">PR</li>
-            <li class="list-group-item list3 country USA">USA</li>
+          <h2 class="">Lista de países</h2>
+          <ul class="list-group list-group-flush country-list">
+            <li class="list-group-item list1 rd RD">RD</li>
+            <li class="list-group-item list2 pr PR">PR</li>
+            <li class="list-group-item list3 usa USA">USA</li>
           </ul>
         </div>
       </div>
     </div>
     <hr class="line">
     <div class="table-container">
-      <h2 class="display-5">Factura</h2>
+      <h2 class="">Factura</h2>
       <table class="table">
         <tbody>
           <tr>
@@ -226,6 +237,29 @@
           </tr>
         </tbody>
       </table>
+    </div>
+    <hr class="line">
+    <div>
+      <h2>Formulario</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
     </div>
 
   </main>
